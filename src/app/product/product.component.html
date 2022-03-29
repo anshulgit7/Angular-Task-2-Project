@@ -1,0 +1,28 @@
+<figure class="text-center">
+    <blockquote class="blockquote">
+      <p>LIST OF PRODUCTS</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <cite title="Source Title"></cite>
+    </figcaption>
+</figure>
+<table class="table table-striped">
+    <thead>
+    <tr class = "table-primary">
+        <th scope="col">Product Name</th>
+        <th scope="col">Company Name</th>
+        <th scope="col">Model Name</th>
+        <th scope="col">Product Price</th>
+        <th scope="col">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of products">
+            <th scope="row">{{u.name}}</th> 
+            <td class = "table-primary">{{u.company}}</td>
+            <td class = "table-primary">{{u.modelName}}</td> 
+            <td class = "table-primary">{{u.price}}</td>
+            <td class = "table-primary">{{u.quantity}}</td> 
+        </tr>
+    </tbody>
+</table>
